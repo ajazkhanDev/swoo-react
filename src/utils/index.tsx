@@ -7,7 +7,6 @@ export default function Counter() {
     const count = useSelector((state: RootState) => state.counter.value);
     const dispatch = useDispatch();
     return (
-
         <Box>
             <BoxChild>
                 <ButtonStyle onClick={() => dispatch(actions.increment())}>{"+1"}</ButtonStyle>
